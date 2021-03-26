@@ -93,46 +93,53 @@ h6,
 	color: #ce0000;
 }
 
-/* Links */
-.entry-content a {
+/*-----------------------------------------------------------------------------------------------*/
+/* Buttons and hyperlinks */
+
+
+/* menu button on hover */
+button:active, button:focus, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:active, input[type="submit"]:focus, .button:active, .button:focus,
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover {
+	border-color: #ce0000;
+	color: #ce0000;
+	opacity: 0.5;
+	outline: none;
+}
+
+
+/* book now buttons */
+.entry-content a, .entry-summary a, #book-now-button button, input[type="button"], input[type="reset"], input[type="submit"], .button {
+	border-color: #059595;
+	color: #059595;
+}
+
+/* book now buttons HOVER */
+.entry-content a, .entry-summary a, #book-now-button:hover button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover {
+	border-color: #059595;
+	color: #059595;
+}
+
+
+/* hyperlinks */
+.entry-content p a, .entry-summary p a, button, input[type="button"], input[type="reset"], input[type="submit"], .button {
+	border-color: #ce0000;
 	color: #ce0000;
 }
 
-.entry-content a:hover {
+.entry-content p a:hover, .entry-summary p a:hover {
+	border-color: #ce0000;
 	color: #ce0000;
 	opacity: 0.5;
 }
 
-/* Buttons */
-
-/* dont think this bit works */
-
-.entry-content a button, 
-.entry-content a input[type="button"], 
-.entry-content a input[type="reset"], 
-.entry-content a input[type="submit"], 
-.entry-content a .button {
-	border-color: #0f9595;
-	color: #0f9595;
+/* contact page email and phone hyperlinks */
+.entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-email a,
+.entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-phone a {
+	color: #ce0000;
 }
 
-button:active, 
-button:focus,
-button:hover,
-input[type="button"]:active, input[type="button"]:focus,
-input[type="button"]:hover,
-input[type="reset"]:active, input[type="reset"]:focus,
-input[type="reset"]:hover,
-input[type="submit"]:active, input[type="submit"]:focus,
-input[type="submit"]:hover,
-.button:active, 
-.button:focus,
-.button:hover,
-.entry-content a:hover .button,
-.entry-content a:active .button,
-.entry-content a:focus .button {
-	border-color: #0f9595;
-	color: #0f9595;
+.entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-email a:hover,
+.entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-phone a:hover {
 	opacity: 0.5;
 }
 
@@ -183,10 +190,22 @@ input[type="submit"]:hover,
  }
 
 /* Gallery */
+/* captions */
 .blocks-gallery-grid .blocks-gallery-image figcaption, .blocks-gallery-grid .blocks-gallery-item figcaption, .wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
 	font-size: 1.1rem;
 }
 
+/* gallery image opacity */
+.blocks-gallery-item:hover {
+	opacity: 0.5;
+	transition: all 1s ease-out;
+}
+
+
+/* images */
+/* .blocks-gallery-grid.columns-3 .blocks-gallery-image, .blocks-gallery-grid.columns-3 .blocks-gallery-item, .wp-block-gallery.columns-3 .blocks-gallery-image, .wp-block-gallery.columns-3 .blocks-gallery-item {
+	min-width: 300px;
+} */
 
 /* menu - adjusted so that in tablet view there is never just 1 menu item on a second row */
 @media screen and (min-width: 768px) {
