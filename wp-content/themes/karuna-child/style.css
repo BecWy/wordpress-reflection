@@ -219,3 +219,74 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 		width: 100%;
 	}
 }
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* side-bar */
+
+@media screen and (min-width: 768px) {
+	.site-content .widget-area {
+		width: 38%;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.site-content .widget-area {
+		width: 30%;
+	}
+}
+
+/* set day of the week width */
+.day-time {
+	display: flex;
+	flex-direction: row;
+	/* width: 80%; */
+	/* justify-content: space-between; */
+	/* align-items: center; */
+}
+
+.day {
+	width: 70px; 
+}
+
+@media screen and (min-width: 768px) {
+	.day {
+		width: 50px;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.day {
+		width: 70px;
+	}
+}
+
+
+.day p,
+.time p {
+	margin: 0;
+}
+
+/* reduce margin below the contact form so that there isn't a big gap between the main and sidebar content 
+in mobile view */
+
+#post-11 {
+	margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+/* contact form button  */
+.frm_style_formidable-style.with_frm_style .frm_compact .frm_dropzone.dz-clickable .dz-message, .frm_style_formidable-style.with_frm_style input[type=submit], .frm_style_formidable-style.with_frm_style .frm_submit input[type=button], .frm_style_formidable-style.with_frm_style .frm_submit button, .frm_form_submit_style, .frm_style_formidable-style.with_frm_style .frm-edit-page-btn {
+	border: #059595 2px solid;
+	color: #059595;
+	background-color: #ffffff;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	line-height: 1;
+	padding: 0.8em 1.6em 0.8em;
+	font-family: Karla, sans-serif;
+	margin-top: 20px;
+}
+
