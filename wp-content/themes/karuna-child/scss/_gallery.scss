@@ -12,11 +12,16 @@
 .blocks-gallery-grid .blocks-gallery-item figcaption span, 
 .wp-block-gallery .blocks-gallery-image figcaption span, 
 .wp-block-gallery .blocks-gallery-item figcaption span {
+	//padding top here controls the height of the shadow. Helps to make the caption text stand out.
 	display: block;
 	width: 100%;
 	height: 100%;
-	padding-bottom: 10px;
-	padding-top: 100px;
+	padding-bottom: 3px;
+	padding-top: 50px;
+	@media screen and (min-width: 768px) {
+		padding-bottom: 10px;
+		padding-top: 60px;
+	}
 }
 
 .blocks-gallery-grid .blocks-gallery-image figcaption a, 
@@ -26,7 +31,6 @@
 	font-size: 1.1rem;
 	width: 100%;
 	height: 100%;
-	/* padding-bottom: 20px; */
 }
 
 

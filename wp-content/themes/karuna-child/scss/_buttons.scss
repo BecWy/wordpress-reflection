@@ -46,6 +46,7 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 
 /* ---------------------------------------------------------------------------------------------------------- */
 /* contact form button  */
+//static
 .frm_style_formidable-style.with_frm_style .frm_compact .frm_dropzone.dz-clickable .dz-message, .frm_style_formidable-style.with_frm_style input[type=submit], .frm_style_formidable-style.with_frm_style .frm_submit input[type=button], .frm_style_formidable-style.with_frm_style .frm_submit button, .frm_form_submit_style, .frm_style_formidable-style.with_frm_style .frm-edit-page-btn {
 	border: #059595 2px solid;
 	color: #059595;
@@ -60,12 +61,19 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 	margin-top: 20px;
 }
 
+//hover and focus
 .frm_style_formidable-style.with_frm_style .frm_compact .frm_dropzone.dz-clickable .dz-message:hover, 
 .frm_style_formidable-style.with_frm_style input[type=submit]:hover, 
 .frm_style_formidable-style.with_frm_style .frm_submit input[type=button]:hover, 
 .frm_style_formidable-style.with_frm_style .frm_submit button:hover, 
 .frm_form_submit_style:hover, 
-.frm_style_formidable-style.with_frm_style .frm-edit-page-btn:hover {
+.frm_style_formidable-style.with_frm_style .frm-edit-page-btn:hover,
+.frm_style_formidable-style.with_frm_style .frm_compact .frm_dropzone.dz-clickable .dz-message:focus, 
+.frm_style_formidable-style.with_frm_style input[type=submit]:focus, 
+.frm_style_formidable-style.with_frm_style .frm_submit input[type=button]:focus, 
+.frm_style_formidable-style.with_frm_style .frm_submit button:focus, 
+.frm_form_submit_style:focus, 
+.frm_style_formidable-style.with_frm_style .frm-edit-page-btn:focus {
 	border: #059595 2px solid;
 	color: #059595;
 	background-color: #ffffff;

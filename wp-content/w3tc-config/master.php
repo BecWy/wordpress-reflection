@@ -58,7 +58,7 @@
         "\\bsql_calc_found_rows\\b",
         "\\bfound_rows\\(\\)"
     ],
-    "lazyload.enabled": true,
+    "lazyload.enabled": false,
     "lazyload.process_img": true,
     "lazyload.process_background": true,
     "lazyload.googlemaps.google_maps_easy": false,
@@ -536,7 +536,9 @@
     "varnish.configuration_overloaded": false,
     "varnish.enabled": false,
     "varnish.debug": false,
-    "varnish.servers": [],
+    "varnish.servers": [
+        ""
+    ],
     "browsercache.configuration_overloaded": false,
     "browsercache.enabled": true,
     "browsercache.rewrite": false,
@@ -898,5 +900,8 @@
     "plugin.license_key": "",
     "plugin.type": "",
     "jquerymigrate.disabled": false,
-    "lazyload_process_background": true
+    "lazyload_process_background": true,
+    "fragmentcache": {
+        "engine": ""
+    }
 }
