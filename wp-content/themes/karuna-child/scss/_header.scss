@@ -1,0 +1,54 @@
+/* header ----------------------------------------------------------*/
+
+/* Hide page title */
+.site-title a {
+	display: none;
+}
+
+/* Top bar color */
+.top-bar {
+	background-color: #a80000;
+}
+
+/* reduce logo padding */
+.site-branding {
+	padding: 1em;
+}
+
+/* CTA banner below the header image */
+.header-widget-area {
+	background-color: #0f9595;
+}
+
+.header-widget-area-wrapper {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.header-widget-area-wrapper {
+		padding-top: .8em;
+		padding-bottom: .8em;
+	}
+}
+
+.header-widget-area-wrapper span {
+	display: none;
+}
+
+@media screen and (min-width: 630px) {
+	.header-widget-area-wrapper span {
+		display: inline-block;
+	}
+}
+
+.header-widget-area-wrapper p {
+	margin: 8px 0;
+}
+
+@media screen and (min-width: 630px) {
+	.header-widget-area-wrapper p {
+		margin: 0.8em 0;
+	}
+}
+

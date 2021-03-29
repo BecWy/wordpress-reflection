@@ -1,0 +1,52 @@
+/* ------------------------------------------------------------------------------------------------ */
+/* sidebar */
+
+@media screen and (min-width: 768px) {
+	.site-content .widget-area {
+		width: 38%;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.site-content .widget-area {
+		width: 30%;
+	}
+}
+
+/* set day of the week width */
+.day-time {
+	display: flex;
+	flex-direction: row;
+}
+
+.day {
+	width: 70px; 
+}
+
+@media screen and (min-width: 768px) {
+	.day {
+		width: 50px;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.day {
+		width: 70px;
+	}
+}
+
+
+.day p,
+.time p {
+	margin: 0;
+}
+
+
+/* contact widget links */
+.widget_contact_info a {
+	color: #ce0000;
+}
+
+.widget_contact_info a:hover {
+	opacity: 0.5;
+}

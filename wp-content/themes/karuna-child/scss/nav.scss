@@ -1,0 +1,38 @@
+/*Menus --------------------------------------------------------------------*/
+
+/* Dropdown menu */
+.main-navigation ul ul {
+	background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+   .main-navigation ul ul {
+         background-color: #a80000;
+     }
+}
+
+/* hide child menu items in mobile */
+.sub-menu li {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.sub-menu li {
+		  display: block;
+	  }
+ }
+
+
+
+/* menu - adjusted so that in tablet view there is never just 1 menu item on a second row */
+@media screen and (min-width: 768px) {
+	#top-menu {
+		width: 400px;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	#top-menu {
+		width: 100%;
+	}
+}

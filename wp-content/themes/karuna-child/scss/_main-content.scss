@@ -1,0 +1,21 @@
+// general main content and content on individual pages
+
+
+/* Main page content */
+#content {
+	padding-bottom: 0;
+}
+
+
+/* Homepage testimonials */
+.front-testimonials .entry-title {
+	color: #ce0000;
+}
+
+
+/* contact page: reduce margin below the contact form so that there isn't a big gap between the main and sidebar content 
+in mobile view */
+
+#post-11 {
+	margin-bottom: 0;
+}

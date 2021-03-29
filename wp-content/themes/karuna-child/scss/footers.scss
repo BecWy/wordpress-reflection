@@ -1,0 +1,24 @@
+// footers ----------------------------------------------
+
+/* Main footer */
+.site-footer,
+.footer-widgets-wrapper {
+	background-color: #a80000;
+}
+
+/* hide empty footer in mobile and display on wider screens to allow more breathing space */
+.entry-footer {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.entry-footer {
+		display: table;
+	}
+}
+
+/* Bottom info bar */
+.site-info p,
+.site-info a {
+	color: #222222;
+}

@@ -1,0 +1,25 @@
+/*-----------------------------------------------------------------------------------------------*/
+/*  hyperlinks */
+
+
+.entry-content p a, .entry-summary p a, button, input[type="button"], input[type="reset"], input[type="submit"], .button {
+	border-color: #ce0000;
+	color: #ce0000;
+}
+
+.entry-content p a:hover, .entry-summary p a:hover {
+	border-color: #ce0000;
+	color: #ce0000;
+	opacity: 0.5;
+}
+
+/* contact page email and phone hyperlinks */
+.entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-email a,
+.entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-phone a {
+	color: #ce0000;
+}
+
+.entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-email a:hover,
+.entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-phone a:hover {
+	opacity: 0.5;
+}

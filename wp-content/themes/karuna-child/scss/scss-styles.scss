@@ -1,0 +1,36 @@
+/* Font colors */
+h1,
+.site-content h2,
+h3,
+h4,
+h5,
+h6,
+.site-content p {
+	color: #222222;
+}
+
+
+// ======================================
+//  Partial Imports
+// ======================================
+
+
+@import './header',
+		'./nav',
+		'./buttons',
+		'./links',
+		'./main-content',
+        './gallery',
+		'./footers',
+        './sidebar';
+
+
+
+
+
+
+
+
+
+
+
