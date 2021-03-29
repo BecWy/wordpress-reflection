@@ -50,3 +50,10 @@
 .widget_contact_info a:hover {
 	opacity: 0.5;
 }
+
+.widget_contact_info .confit-phone {
+	color: #ce0000;
+	&:hover {
+		opacity: 0.5;
+	}
+}

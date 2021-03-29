@@ -7,10 +7,14 @@
 	color: #ce0000;
 }
 
-.entry-content p a:hover, .entry-summary p a:hover {
-	border-color: #ce0000;
-	color: #ce0000;
-	opacity: 0.5;
+.entry-content p a {
+	&:hover, .entry-summary p a:hover,
+	&:active, .entry-summary p a:hover,
+	&:focus, .entry-summary p a:hover {
+		border-color: #ce0000;
+		color: #ce0000;
+		opacity: 0.5;
+	}
 }
 
 /* contact page email and phone hyperlinks */
