@@ -119,7 +119,6 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 	color: #059595;
 }
 
-
 /* hyperlinks */
 .entry-content p a, .entry-summary p a, button, input[type="button"], input[type="reset"], input[type="submit"], .button {
 	border-color: #ce0000;
@@ -143,6 +142,11 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 	opacity: 0.5;
 }
 
+.widget_contact_info a {
+	color: #ce0000;
+}
+
+
 /* banner button */
 .header-widget-area button:active, 
 .header-widget-area button:focus,
@@ -160,6 +164,19 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 	color: #ffffff;
 	opacity: 0.5;
 }
+
+/* hide empty footer in mobile and display on wider screens to allow more breathing space */
+.entry-footer {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.entry-footer {
+		display: table;
+	}
+}
+
+
 
 /* Bottom info bar */
 .site-info p,
@@ -190,10 +207,37 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
  }
 
 /* Gallery */
-/* captions */
-.blocks-gallery-grid .blocks-gallery-image figcaption, .blocks-gallery-grid .blocks-gallery-item figcaption, .wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
-	font-size: 1.1rem;
+/* captions. had to make the whole caption <a>, not just the text */
+.blocks-gallery-grid .blocks-gallery-image figcaption, 
+.blocks-gallery-grid .blocks-gallery-item figcaption, 
+.wp-block-gallery .blocks-gallery-image figcaption, 
+.wp-block-gallery .blocks-gallery-item figcaption {
+	padding: 0;
 }
+
+.blocks-gallery-grid .blocks-gallery-image figcaption span, 
+.blocks-gallery-grid .blocks-gallery-item figcaption span, 
+.wp-block-gallery .blocks-gallery-image figcaption span, 
+.wp-block-gallery .blocks-gallery-item figcaption span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 10px;
+	padding-top: 100px;
+}
+
+.blocks-gallery-grid .blocks-gallery-image figcaption a, 
+.blocks-gallery-grid .blocks-gallery-item figcaption a, 
+.wp-block-gallery .blocks-gallery-image figcaption a, 
+.wp-block-gallery .blocks-gallery-item figcaption a {
+	font-size: 1.1rem;
+	width: 100%;
+	height: 100%;
+	/* padding-bottom: 20px; */
+}
+
+
+
 
 /* gallery image opacity */
 .blocks-gallery-item:hover {
