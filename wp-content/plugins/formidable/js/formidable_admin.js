@@ -324,6 +324,7 @@ function frmAdminBuildJS() {
 		copyHelper = false,
 		fieldsUpdated = 0,
 		thisFormId = 0,
+		autoId = 0,
 		optionMap = {};
 
 	if ( thisForm !== null ) {
@@ -553,8 +554,7 @@ function frmAdminBuildJS() {
 		jQuery( '.frm_bstooltip, .frm_help' ).tooltip( );
 
 		jQuery( document ).on( 'click', '#doaction, #doaction2', function( event ) {
-			var link,
-				isTop = this.id === 'doaction',
+			var isTop = this.id === 'doaction',
 				suffix = isTop ? 'top' : 'bottom',
 				bulkActionSelector = document.getElementById( 'bulk-action-selector-' + suffix ),
 				confirmBulkDelete = document.getElementById( 'confirm-bulk-delete-' + suffix );
@@ -701,6 +701,7 @@ function frmAdminBuildJS() {
 						inside.html( html );
 						initiateMultiselect();
 						showInputIcon( '#' + cont.attr( 'id' ) );
+						initAutocomplete( 'page', inside );
 						jQuery( b ).trigger( 'frm-action-loaded' );
 					}
 				});
@@ -994,23 +995,25 @@ function frmAdminBuildJS() {
 	 * @param {object} opts
 	 */
 	function insertNewFieldByDragging( selectedItem, fieldButton ) {
-		var fieldType = fieldButton.attr( 'id' );
+		var fieldType, addBtn, currentItem, section, formId, sectionId, loadingID, hasBreak;
+
+		fieldType = fieldButton.attr( 'id' );
 
 		// We'll optimistically disable the button now. We'll re-enable if AJAX fails
 		if ( 'summary' === fieldType ) {
-			var addBtn = fieldButton.children( '.frm_add_field' );
+			addBtn = fieldButton.children( '.frm_add_field' );
 			disableSummaryBtnBeforeAJAX( addBtn, fieldButton );
 		}
 
-		var currentItem = jQuery( selectedItem ).data().uiSortable.currentItem;
-		var section = getSectionForFieldPlacement( currentItem );
-		var formId = getFormIdForFieldPlacement( section );
-		var sectionId = getSectionIdForFieldPlacement( section );
+		currentItem = jQuery( selectedItem ).data().uiSortable.currentItem;
+		section = getSectionForFieldPlacement( currentItem );
+		formId = getFormIdForFieldPlacement( section );
+		sectionId = getSectionIdForFieldPlacement( section );
 
-		var loadingID = fieldType.replace( '|', '-' );
+		loadingID = fieldType.replace( '|', '-' ) + '_' + getAutoId();
 		currentItem.replaceWith( '<li class="frm-wait frmbutton_loadingnow" id="' + loadingID + '" ></li>' );
 
-		var hasBreak = 0;
+		hasBreak = 0;
 		if ( 'summary' === fieldType ) {
 			// see if we need to insert a page break before this newly-added summary field. Check for at least 1 page break
 			hasBreak = jQuery( '.frmbutton_loadingnow#' + loadingID ).prevAll( 'li[data-type="break"]' ).length ? 1 : 0;
@@ -1037,6 +1040,17 @@ function frmAdminBuildJS() {
 				maybeReenableSummaryBtnAfterAJAX( fieldType, addBtn, fieldButton, errorThrown );
 			}
 		});
+	}
+
+	/**
+	 * Get a unique id that automatically increments with every function call.
+	 * Can be used for any UI that requires a unique id.
+	 * Not to be used in data.
+	 *
+	 * @returns {integer}
+	 */
+	function getAutoId() {
+		return ++autoId;
 	}
 
 	// don't allow page break, embed form, captcha, summary, or section inside section field
@@ -3536,7 +3550,9 @@ function frmAdminBuildJS() {
 		// Allow for the column number dropdown.
 		replaceWith = replaceWith.replace( ' block ', ' ' ).replace( ' inline ', ' horizontal_radio ' ).replace( ' frm_alignright ', ' ' );
 
-		classes = field.className.split( ' frmstart ' )[1].split( ' frmend ' )[0];
+		classes = field.className.split( ' frmstart ' )[1];
+		classes = 0 === classes.indexOf( 'frmend ' ) ? '' : classes.split( ' frmend ' )[0];
+
 		if ( classes.trim() === '' ) {
 			replace = ' frmstart  frmend ';
 			replaceWith = ' frmstart ' + replaceWith.trim() + ' frmend ';
@@ -3745,11 +3761,20 @@ function frmAdminBuildJS() {
 		}
 
 		jQuery( document ).on( 'click', '[data-upgrade]', function( event ) {
+			var upgradeLabel, requires, button, link, content;
+
 			event.preventDefault();
+			upgradeLabel = this.getAttribute( 'data-upgrade' );
+
+			if ( '' === upgradeLabel ) {
+				// if the upgrade level is empty, it's because this upgrade is already active.
+				return;
+			}
+
 			jQuery( '#frm_upgrade_modal .frm_lock_icon' ).removeClass( 'frm_lock_open_icon' );
 			jQuery( '#frm_upgrade_modal .frm_lock_icon use' ).attr( 'xlink:href', '#frm_lock_icon' );
 
-			var requires = this.getAttribute( 'data-requires' );
+			requires = this.getAttribute( 'data-requires' );
 			if ( typeof requires === 'undefined' || requires === null || requires === '' ) {
 				requires = 'Pro';
 			}
@@ -3758,15 +3783,15 @@ function frmAdminBuildJS() {
 			// If one click upgrade, hide other content
 			addOneClickModal( this );
 
-			jQuery( '.frm_feature_label' ).text( this.getAttribute( 'data-upgrade' ) );
+			jQuery( '.frm_feature_label' ).text( upgradeLabel );
 			jQuery( '#frm_upgrade_modal h2' ).show();
 
 			$info.dialog( 'open' );
 
 			// set the utm medium
-			var button = $info.find( '.button-primary:not(#frm-oneclick-button)' );
-			var link = button.attr( 'href' ).replace( /(medium=)[a-z_-]+/ig, '$1' + this.getAttribute( 'data-medium' ) );
-			var content = this.getAttribute( 'data-content' );
+			button = $info.find( '.button-primary:not(#frm-oneclick-button)' );
+			link = button.attr( 'href' ).replace( /(medium=)[a-z_-]+/ig, '$1' + this.getAttribute( 'data-medium' ) );
+			content = this.getAttribute( 'data-content' );
 			if ( content === undefined ) {
 				content = '';
 			}
@@ -4275,6 +4300,7 @@ function frmAdminBuildJS() {
 		// update all rows of categories/taxonomies
 		var curSelect, newSelect,
 			catRows = document.getElementById( 'frm_posttax_rows' ).childNodes,
+			postParentField = document.querySelector( '.frm_post_parent_field' ),
 			postType = this.value;
 
 		// Get new category/taxonomy options
@@ -4309,6 +4335,41 @@ function frmAdminBuildJS() {
 				}
 			}
 		});
+
+		// Get new post parent option.
+		if ( postParentField ) {
+			const postParentOpt     = postParentField.querySelector( '.frm_autocomplete_value_input' ) || postParentField.querySelector( 'select' );
+			const postParentOptName = postParentOpt.getAttribute( 'name' );
+
+			jQuery.ajax({
+				url: ajaxurl,
+				method: 'POST',
+				data: {
+					action: 'frm_get_post_parent_option',
+					post_type: postType,
+					_wpnonce: frmGlobal.nonce
+				},
+				success: response => {
+					if ( 'string' !== typeof response ) {
+						console.error( response );
+						return;
+					}
+
+					// Post type is not hierarchical.
+					if ( '0' === response ) {
+						postParentField.classList.add( 'frm_hidden' );
+						postParentOpt.value = '';
+						return;
+					}
+
+					postParentField.classList.remove( 'frm_hidden' );
+					// The replaced string is declared in FrmProFormActionController::ajax_get_post_parent_option() in the pro version.
+					postParentField.querySelector( '.frm_post_parent_opt_wrapper' ).innerHTML = response.replaceAll( 'REPLACETHISNAME', postParentOptName );
+					initAutocomplete( 'page', postParentField );
+				},
+				error: response => console.error( response )
+			});
+		}
 	}
 
 	function addPosttaxRow() {
@@ -6029,44 +6090,60 @@ function frmAdminBuildJS() {
 		}
 	}
 
-	function initAutocomplete( type ) {
-		if ( jQuery( '.frm-' + type + '-search' ).length < 1 ) {
-			return;
-		}
+	/**
+	 * Init autocomplete.
+	 *
+	 * @since 4.10.01 Add container param to init autocomplete elements inside an element.
+	 *
+	 * @param {String} type Type of data. Accepts `page` or `user`.
+	 * @param {String|Object} container Container class or element. Default is null.
+	 */
+	function initAutocomplete( type, container ) {
+		const basedUrlParams = '?action=frm_' + type + '_search&nonce=' + frmGlobal.nonce;
+		const elements       = ! container ? jQuery( '.frm-' + type + '-search' ) : jQuery( container ).find( '.frm-' + type + '-search' );
 
-		jQuery( '.frm-' + type + '-search' ).autocomplete({
-			delay: 100,
-			minLength: 0,
-			source: ajaxurl + '?action=frm_' + type + '_search&nonce=' + frmGlobal.nonce,
-			change: autoCompleteSelectBlank,
-			select: autoCompleteSelectFromResults,
-			focus: autoCompleteFocus,
-			position: {
-				my: 'left top',
-				at: 'left bottom',
-				collision: 'flip'
-			},
-			response: function( event, ui ) {
-				if ( ! ui.content.length ) {
-					var noResult = { value: '', label: frm_admin_js.no_items_found };
-					ui.content.push( noResult );
-				}
-			},
-			create: function() {
-				var $container = jQuery( this ).parent();
+		elements.each( function() {
+			let urlParams = basedUrlParams;
+			const element = jQuery( this );
 
-				if ( $container.length === 0 ) {
-					$container = 'body';
-				}
-
-				jQuery( this ).autocomplete( 'option', 'appendTo', $container );
+			// Check if a custom post type is specific.
+			if ( element.attr( 'data-post-type' ) ) {
+				urlParams += '&post_type=' + element.attr( 'data-post-type' );
 			}
-		})
-		.on( 'focus', function() {
-			// Show options on click to make it work more like a dropdown.
-			if ( this.value === '' || this.nextElementSibling.value < 1 ) {
-				jQuery( this ).autocomplete( 'search', this.value );
-			}
+			element.autocomplete({
+				delay: 100,
+				minLength: 0,
+				source: ajaxurl + urlParams,
+				change: autoCompleteSelectBlank,
+				select: autoCompleteSelectFromResults,
+				focus: autoCompleteFocus,
+				position: {
+					my: 'left top',
+					at: 'left bottom',
+					collision: 'flip'
+				},
+				response: function( event, ui ) {
+					if ( ! ui.content.length ) {
+						var noResult = { value: '', label: frm_admin_js.no_items_found };
+						ui.content.push( noResult );
+					}
+				},
+				create: function() {
+					var $container = jQuery( this ).parent();
+
+					if ( $container.length === 0 ) {
+						$container = 'body';
+					}
+
+					jQuery( this ).autocomplete( 'option', 'appendTo', $container );
+				}
+			})
+			.on( 'focus', function() {
+				// Show options on click to make it work more like a dropdown.
+				if ( this.value === '' || this.nextElementSibling.value < 1 ) {
+					jQuery( this ).autocomplete( 'search', this.value );
+				}
+			});
 		});
 	}
 
