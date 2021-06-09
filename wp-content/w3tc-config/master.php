@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "2.1.1",
+    "version": "2.1.3",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -58,6 +58,7 @@
         "\\bsql_calc_found_rows\\b",
         "\\bfound_rows\\(\\)"
     ],
+    "docroot_fix.enable": false,
     "lazyload.enabled": false,
     "lazyload.process_img": true,
     "lazyload.process_background": true,
@@ -903,5 +904,9 @@
     "lazyload_process_background": true,
     "fragmentcache": {
         "engine": ""
+    },
+    "pgcache.bad_behavior_path": "",
+    "newrelic": {
+        "monitoring_type": "apm"
     }
 }

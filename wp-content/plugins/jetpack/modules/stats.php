@@ -646,7 +646,7 @@ function stats_reports_page( $main_chart_only = false ) {
 		'view'                => array( 'referrers', 'postviews', 'searchterms', 'clicks', 'post', 'table' ),
 		'numdays'             => 'int',
 		'day'                 => 'date',
-		'unit'                => array( 1, 7, 31, 'human' ),
+		'unit'                => array( '1', '7', '31', 'human' ),
 		'humanize'            => array( 'true' ),
 		'num'                 => 'int',
 		'summarize'           => null,
@@ -1258,7 +1258,7 @@ function stats_dashboard_widget_content() {
 
 	$post_ids = array();
 
-	$csv_end_date = gmdate( 'Y-m-d' );
+	$csv_end_date = current_time( 'Y-m-d' );
 	$csv_args     = array(
 		'top'    => "&limit=8&end=$csv_end_date",
 		'search' => "&limit=5&end=$csv_end_date",

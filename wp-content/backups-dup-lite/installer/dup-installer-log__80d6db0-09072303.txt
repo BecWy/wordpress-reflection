@@ -1,0 +1,622 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 07:34:12
+* VERSION: 1.4.1
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 8.0.3                                 |8.0.3
+OS__________________: WINNT                                 |WINNT
+CREATED_____________: 2021-06-09 07:23:03
+WP VERSION__________: 5.7.2
+DUP VERSION_________: 1.4.1
+DB__________________: 10.4.18
+DB TABLES___________: 37
+DB ROWS_____________: 1,134
+DB FILE SIZE________: 5.23MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 8.0.3 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3
+DOC ROOT____________: "C:/xampp/htdocs/wordpress-reflection"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://localhost/wordpress-reflection/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ACTION______: "donothing"
+ARCHIVE ENGINE______: "ziparchive"
+SET DIR PERMS_______: 0
+DIR PERMS VALUE_____: 644
+SET FILE PERMS______: 0
+FILE PERMS VALUE____: 755
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "C:/xampp/htdocs/wordpress-reflection/backup_for_wordpress_reflection_[HASH]_20210609072303_archive.zip"
+SIZE________________: 597.22MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+BEFORE EXTRACION ACTIONS
+MAINTENANCE MODE ENABLE
+
+
+START ZIP FILE EXTRACTION STANDARD >>> 
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "C:/xampp/htdocs/wordpress-reflection/backup_for_wordpress_reflection_[HASH]_20210609072303_archive.zip"
+SIZE________________: 597.22MBFile timestamp set to Current: 2021-06-09 07:34:48
+<<< ZipArchive Unzip Complete: true
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+
+PERMISSION UPDATES: None Applied
+
+STEP-1 COMPLETE @ 07:34:48 - RUNTIME: 36.2881 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 07:41:04
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+FUNCTION CREATION___: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.4.18 -- Build Server: 10.4.18
+FILE SIZE:	dup-database__[HASH].sql (1.9MB)
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE:	NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[C:/xampp/htdocs/wordpress-reflection/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+DB FUNCTIONS:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	331
+
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_duplicator_packages: (0)
+wp_frm_fields: (10)
+wp_frm_forms: (2)
+wp_frm_item_metas: (0)
+wp_frm_items: (0)
+wp_gmp_icons: (47)
+wp_gmp_maps: (1)
+wp_gmp_marker_groups: (0)
+wp_gmp_marker_groups_relation: (0)
+wp_gmp_markers: (0)
+wp_gmp_membership_presets: (1)
+wp_gmp_modules: (14)
+wp_gmp_modules_type: (4)
+wp_gmp_options: (2)
+wp_gmp_options_categories: (4)
+wp_gmp_usage_stat: (0)
+wp_imagify_files: (0)
+wp_imagify_folders: (0)
+wp_links: (0)
+wp_options: (277)
+wp_postmeta: (270)
+wp_posts: (293)
+wp_shortpixel_folders: (0)
+wp_shortpixel_meta: (0)
+wp_term_relationships: (12)
+wp_term_taxonomy: (3)
+wp_termmeta: (0)
+wp_terms: (3)
+wp_usermeta: (29)
+wp_users: (1)
+wp_yoast_indexable: (53)
+wp_yoast_indexable_hierarchy: (51)
+wp_yoast_migrations: (21)
+wp_yoast_primary_term: (0)
+wp_yoast_seo_links: (44)
+Removed '63' cache/transient rows
+
+INSERT DATA RUNTIME: 3.1672 sec.
+STEP-2 COMPLETE @ 07:41:08 - RUNTIME: 3.2246 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 07:42:02
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "WordPress Reflection"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "C:/xampp/htdocs/wordpress-project1"
+path_new______________: "C:/xampp/htdocs/wordpress-reflection"
+siteurl_______________: "http://localhost/wordpress-reflection"
+url_old_______________: "http://localhost/wordpress-project1"
+url_new_______________: "http://localhost/wordpress-reflection"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: true
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_frm_fields"___________________________________[ROWS:    10][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_frm_forms"____________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_frm_item_metas"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_frm_items"____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_gmp_icons"____________________________________[ROWS:    47][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_gmp_maps"_____________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_gmp_marker_groups"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_gmp_marker_groups_relation"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_gmp_markers"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_gmp_membership_presets"_______________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_gmp_modules"__________________________________[ROWS:    14][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_gmp_modules_type"_____________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_gmp_options"__________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_gmp_options_categories"_______________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_gmp_usage_stat"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_imagify_files"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_imagify_folders"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   277][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:   270][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:   293][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_shortpixel_folders"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_shortpixel_meta"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:    12][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    29][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_yoast_indexable"______________________________[ROWS:    53][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_yoast_indexable_hierarchy"____________________[ROWS:    51][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_yoast_migrations"_____________________________[ROWS:    21][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+
+EVALUATE TABLE: "wp_yoast_primary_term"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_yoast_seo_links"______________________________[ROWS:    44][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  2:"C:\/xampp\/htdocs\/wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  4:"C:\xampp\htdocs\wordpress-project1" ==============> "C:/xampp/htdocs/wordpress-reflection"
+	SEARCH  5:"C:\\xampp\\htdocs\\wordpress-project1" ===========> "C:\/xampp\/htdocs\/wordpress-reflection"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cwordpress-project1" ======> "C%3A%2Fxampp%2Fhtdocs%2Fwordpress-reflection"
+	SEARCH  7:"//localhost/wordpress-project1" ==================> "//localhost/wordpress-reflection"
+	SEARCH  8:"\/\/localhost\/wordpress-project1" ===============> "\/\/localhost\/wordpress-reflection"
+	SEARCH  9:"%2F%2Flocalhost%2Fwordpress-project1" ============> "%2F%2Flocalhost%2Fwordpress-reflection"
+	SEARCH 10:"https://localhost/wordpress-reflection" ==========> "http://localhost/wordpress-reflection"
+	SEARCH 11:"https:\/\/localhost\/wordpress-reflection" =======> "http:\/\/localhost\/wordpress-reflection"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fwordpress-reflection" ==> "http%3A%2F%2Flocalhost%2Fwordpress-reflection"
+--------------------------------------
+SCANNED:	Tables:37 	|	 Rows:1143 	|	 Cells:13007 
+UPDATED:	Tables:7 	|	 Rows:399 	|	 Cells:581 
+ERRORS:		0 
+RUNTIME:	0.590300 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME "** OBSCURED **"
+	UPDATE DB_USER "** OBSCURED **"
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	UPDATE WP_CACHE true
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache '.htaccess__[HASH]' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => really-simple-ssl/rlrsssl-really-simple-ssl.php
+    [1] => simple-google-recaptcha/simple-google-recaptcha.php
+    [2] => js_composer/js_composer.php
+)
+
+MAINTENANCE MODE DISABLE
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 07:42:03 - RUNTIME: 0.6785 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] No general notices
+	SECTIONS: general
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+====================================
