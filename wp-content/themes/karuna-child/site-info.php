@@ -1,3 +1,6 @@
 <div class="site-info">
-	<?php printf('© ReActivate Life. 2021. All rights reserved.' ); ?>
+	<?php 
+	$date = date("Y");
+	printf("© Aldeburgh Wellbeing Studio $date. All rights reserved."); 
+	?>
 </div><!-- .site-info -->

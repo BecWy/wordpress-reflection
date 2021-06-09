@@ -2,13 +2,13 @@
 /* sidebar */
 
 @media screen and (min-width: 768px) {
-	.site-content .widget-area {
-		width: 38%;
+	.site-content #secondary .widget-area {
+		width: 38%; 
 	}
 }
 
 @media screen and (min-width: 1100px) {
-	.site-content .widget-area {
+	.site-content #secondary .widget-area {  
 		width: 30%;
 	}
 }

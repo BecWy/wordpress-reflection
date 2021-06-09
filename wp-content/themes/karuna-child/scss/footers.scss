@@ -22,3 +22,24 @@
 .site-info a {
 	color: #222222;
 }
+
+//widget - full width footer area
+.full-width-widget-area {
+	width: 100%;
+}
+
+#responsive_lightbox_gallery_widget-3 
+#rl-gallery-container-1 .rl-basicgrid-gallery {
+	width: 100%;
+	border: 3px solid magenta;
+	margin-bottom: 40px;
+}
+
+.site-content .full-width-widget-area .widget, .header-widget-area-wrapper .widget,
+.site-content .full-width-widget-area .widget-area {
+	width: 100%;
+}
+
+.site-content .full-width-widget-area .widget, .header-widget-area-wrapper .widget {
+	flex-basis: auto;
+}
