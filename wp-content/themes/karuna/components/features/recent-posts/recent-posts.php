@@ -19,7 +19,7 @@
 					wp_reset_postdata();
 				?>
 			</div>
-			<a class="more-recent-posts button" href="<?php echo esc_url( get_permalink( get_option( 'page_for_posts' ) ) ); ?>">
+			<a class="more-recent-posts button" id="recent-posts-button" href="<?php echo esc_url( get_permalink( get_option( 'page_for_posts' ) ) ); ?>">
 				<?php esc_html_e( 'More Posts', 'karuna' ); ?>
 			</a>
 		</div>

@@ -1,18 +1,20 @@
 /*-----------------------------------------------------------------------------------------------*/
 /*  hyperlinks */
 
-
+//a .more-recent-posts .button,
+//#primary #front-page-recent-posts .recent-posts-wrapper .recent-posts > .more-recent-posts > .button .entry-content a,
+#recent-posts-button,
 .entry-content p a, .entry-summary p a, button, input[type="button"], input[type="reset"], input[type="submit"], .button {
-	border-color: #ce0000;
-	color: #ce0000;
+	border-color: $color3;
+	color: $color3;
 }
 
 .entry-content p a {
 	&:hover, .entry-summary p a:hover,
 	&:active, .entry-summary p a:hover,
 	&:focus, .entry-summary p a:hover {
-		border-color: #ce0000;
-		color: #ce0000;
+		border-color: $color1;
+		color: $color1;
 		opacity: 0.5;
 	}
 }
@@ -20,7 +22,7 @@
 /* contact page email and phone hyperlinks */
 .entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-email a,
 .entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-phone a {
-	color: #ce0000;
+	color: $color1;
 }
 
 .entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-email a:hover,

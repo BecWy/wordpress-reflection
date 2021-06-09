@@ -44,7 +44,7 @@
 
 /* contact widget links */
 .widget_contact_info a {
-	color: #ce0000;
+	color: $color2;
 }
 
 .widget_contact_info a:hover {
@@ -52,7 +52,7 @@
 }
 
 .widget_contact_info .confit-phone {
-	color: #ce0000;
+	color: $color2;
 	&:hover {
 		opacity: 0.5;
 	}
