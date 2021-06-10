@@ -9,12 +9,14 @@
 	color: $color3;
 }
 
+
+//hover
 .entry-content p a {
 	&:hover, .entry-summary p a:hover,
 	&:active, .entry-summary p a:hover,
 	&:focus, .entry-summary p a:hover {
-		border-color: $color1;
-		color: $color1;
+		border-color: $color3;
+		color: $color3;
 		opacity: 0.5;
 	}
 }
@@ -27,5 +29,37 @@
 
 .entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-email a:hover,
 .entry-content .wp-block-jetpack-contact-info .wp-block-jetpack-phone a:hover {
+	opacity: 0.5;
+}
+
+
+//posts page text links
+//static
+.comment-navigation a, .comment-navigation a:visited, .posts-navigation a, .posts-navigation a:visited, .post-navigation a, .post-navigation a:visited,
+#comments a,
+.entry-content a {
+	color: $color3;
+}
+
+//hover
+.comment-navigation a:hover, .comment-navigation a:hover, .posts-navigation a:hover, .posts-navigation a:hover, .post-navigation a:hover, .post-navigation a:hover,
+.comment-navigation a:active, .comment-navigation a:active, .posts-navigation a:active, .posts-navigation a:active, .post-navigation a:active, .post-navigation a:active,
+.comment-navigation a:focus, .comment-navigation a:focus, .posts-navigation a:focus, .posts-navigation a:focus, .post-navigation a:focus, .post-navigation a:focus,
+#comments a:hover,
+#content #primary #main .post .navigation .nav-links a:hover,
+#content #primary #main .post .navigation .nav-links a:focus,
+#content #primary #main .post .navigation .nav-links a:active 
+#content #primary #main .post .entry-header .entry-title a:hover, 
+#content #primary #main .post .entry-header .entry-title a:focus,
+#content #primary #main .post .entry-header .entry-title a:active,
+#content #primary #main .post .entry-header .entry-title:hover a, 
+#content #primary #main .post .entry-header .entry-title:focus a,
+#content #primary #main .post .entry-header .entry-title:active a,
+.entry-content a:hover,
+.nav-links .nav-next:hover a,
+.nav-links .nav-next a:hover,
+.nav-links .nav-previous:hover a,
+.nav-links .nav-previous a:hover  {
+	color: $color3;
 	opacity: 0.5;
 }

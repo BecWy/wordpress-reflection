@@ -60,8 +60,8 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 	margin-top: 20px;
 	&:hover,
 	&:focus {
-		border: #059595 2px solid;
-		color: #059595;
+		border: $color3 2px solid;
+		color: $color3;
 		background-color: #ffffff;
 		opacity: 0.5;
 	}
