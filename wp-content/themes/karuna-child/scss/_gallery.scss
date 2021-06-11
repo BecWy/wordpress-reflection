@@ -1,50 +1,6 @@
 // /* Gallery------------------------------------------------------------------------------------- */
 
-// /* captions. had to make the whole caption <a>, not just the text */
-// .blocks-gallery-grid .blocks-gallery-image figcaption, 
-// .blocks-gallery-grid .blocks-gallery-item figcaption, 
-// .wp-block-gallery .blocks-gallery-image figcaption, 
-// .wp-block-gallery .blocks-gallery-item figcaption {
-// 	padding: 0;
-// }
-
-// .blocks-gallery-grid .blocks-gallery-image figcaption span, 
-// .blocks-gallery-grid .blocks-gallery-item figcaption span, 
-// .wp-block-gallery .blocks-gallery-image figcaption span, 
-// .wp-block-gallery .blocks-gallery-item figcaption span {
-// 	//padding top here controls the height of the shadow. Helps to make the caption text stand out.
-// 	display: block;
-// 	width: 100%;
-// 	height: 100%;
-// 	padding-bottom: 3px;
-// 	padding-top: 15px;
-// 	@media screen and (min-width: 768px) {
-// 		padding-bottom: 10px;
-// 		padding-top: 40px;
-// 	}
-// }
-
-// .blocks-gallery-grid .blocks-gallery-image figcaption a, 
-// .blocks-gallery-grid .blocks-gallery-item figcaption a, 
-// .wp-block-gallery .blocks-gallery-image figcaption a, 
-// .wp-block-gallery .blocks-gallery-item figcaption a {
-// 	font-size: 1.1rem;
-// 	width: 100%;
-// 	height: 100%;
-// }
-
-
-// /* gallery image opacity */
-// .blocks-gallery-item:hover {
-// 	opacity: 0.6;
-// 	transition: all 1s ease-out;
-// }
-
-
-
-
-///MY CUSTOM GALLERY
-//Don't forget to add a transition for the opacity
+///MY CUSTOM GALLERY - FOR THE IMAGE LINKS TO MENU PAGES
 .my-gallery {
 	box-sizing: border-box;
 	padding: 0;
@@ -59,18 +15,33 @@
 	align-items: center;
 	padding: 0;
 	margin: 0;
-	a {
-		width: 50%;
-		margin: 15px;
-		transition: all 1s ease-out;
+	.my-gallery-image-container {
+		width: 50%; //33.333%;
+		padding: 0;
+		margin: 0;
+		display: flex;
 		position: relative;
-		//opacity: 1;
+		z-index: 1;
+		opacity: 1;
+		a {
+			width: 100%;
+			margin: 25px;//15px;
+			transition: all 1s ease-out;
+			position: relative;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		&:hover {
+			opacity: 1;
+		}
 	}
-	// &:hover {
-	// 	//opacity: 0.6;
-	// 	//transition: all 1s ease-out;
-	// }
 }
+
+// #image-container-1 {
+// 	margin-left: auto;
+// }
+// #image-container-2 {
+// 	margin-right: auto;
+// }
 
 .my-gallery-bottom-row {
 	display: flex;
@@ -80,29 +51,32 @@
 	align-items: center;
 	padding: 0;
 	margin: 0;
-	a {
-		min-width:100px;
-		max-width: 50%;
-		margin: 15px;
-		//padding: 10px;
-		//transition: all 1s ease-out;
+	.my-gallery-image-container {
+		width: 50%;
+		padding: 0;
+		margin: 0;
+		display: flex;
 		position: relative;
-		//opacity: 1;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		@media screen and (min-width: 768px) {
-			max-width: 33%;
-			width: 30%;
-
+		z-index: 1;
+		@media screen and (min-width: 600px) {
+			width: 33.333%;
+		}
+		a {
+			width: 100%;
+			margin: 25px; //15px;
+			transition: all 1s ease-out;
+			position: relative;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
 	}
-	// &:hover {
-	// 	//opacity: 0.6;
-	// 	//transition: all 1s ease-out;
-	// 	p {
-	// 		background-color: $color1;
-	// 		//opacity: 0.6;
-	// 	}
-	// }
+}
+
+//The final image needs to be 100% wide in mobile as there are an odd number of cards.
+#image-container-5 {
+	width: 100%;
+	@media screen and (min-width: 600px) {
+		width: 33.333%;
+	}
 }
 
 .my-gallery a p {
@@ -111,23 +85,31 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
-	font-size: 1.2rem;
 	font-weight: bold;
 	letter-spacing: 1px;
 	line-height: 1;
-	//padding: 0.4rem 0.8rem;
-	padding: 0.8rem 1.6rem;
-	//padding: 1.2rem 2.4rem;
+	max-width: 100%;
 	text-transform: uppercase;
 	margin: 0;
-	z-index: 3;
-	opacity: 1;
+	z-index: 5;
 	border-radius: 10px;
 	border: 2px solid white;
 	background-color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	display: inline;
+	word-wrap: normal;
+	word-break: normal;
+	
+	font-size: 1rem;
+	padding: 0.4rem 0.8rem;
+	
+	@media screen and (min-width: 1100px) {
+		padding: 0.8rem 1.6rem;
+		font-size: 1.2rem;
+	}
 }
 
-.my-gallery img {
+.my-gallery .my-gallery-image-container img {
 	padding: 0;
 	margin: 0;
 	object-fit: contain;
@@ -136,23 +118,27 @@
 	display: block; //removes unwanted space between the <a> and <img>
 }
 
-.my-gallery a:hover img {
+.my-gallery .my-gallery-image-container .my-gallery-image-link img {
+	opacity: 1;
+	transition: all 1s ease-out;
+}
+
+.my-gallery .my-gallery-image-container .my-gallery-image-link:hover img {
 	opacity: 0.6;
 	transition: all 1s ease-out;
 }
 
-.my-gallery a img {
-	opacity: 1;
-	transition: all 1s ease-out;
-}
 
-#my-gallery-image-link:hover {
+#image-link-1,
+#image-link-2,
+#image-link-3,
+#image-link-4,
+#image-link-5 {
 	opacity: 1;
 }
-
 
 //need a pseudo element to add the gradient
-.my-gallery a::after {
+.my-gallery-image-link::after {
 	content:'';
 	position:absolute;
 	left:0; top:0;
