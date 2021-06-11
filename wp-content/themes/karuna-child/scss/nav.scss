@@ -11,10 +11,18 @@
      }
 }
 
-/* hide child menu items in mobile */
-.sub-menu li {
+/* hide all child menu items in mobile */
+// .sub-menu li {
+// 	display: none;
+// }
+
+//decided to just hide the about submenu in the end to make the menu a bit shorter,
+//but keep the more important options.
+#menu-item-125 .sub-menu li {
 	display: none;
 }
+
+
 
 @media screen and (min-width: 768px) {
 	.sub-menu li {
