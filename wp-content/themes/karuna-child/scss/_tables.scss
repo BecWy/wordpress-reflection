@@ -1,0 +1,23 @@
+.wp-block-table .has-fixed-layout {
+    overflow-x: auto;
+    word-break: normal;
+    overflow-wrap: normal;
+    width: auto;
+    // table, .has-fixed-layout {
+      //  width: auto;
+        @media screen and (min-width: 600px) {
+            width: 100%;
+        }
+   // }
+    th, td {
+        min-width: 150px;
+    }
+}
+
+
+.wp-block-table .has-fixed-layout td, .wp-block-table .has-fixed-layout th {
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+//.mobile-x-scroll
