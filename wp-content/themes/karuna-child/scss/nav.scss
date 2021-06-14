@@ -44,3 +44,61 @@
 		width: 100%;
 	}
 }
+
+
+
+//for centering logo and menu in IE mobile
+.site-branding-wrapper {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.site-branding {
+	align-items: center;
+	justify-content: center;
+	padding-left: 0px;
+	@media screen and (max-width: 768px) {
+		padding-right: 0px;
+		padding-left: 0px;
+	}	
+	}
+
+	.custom-logo-link {
+	display: flex;
+	flex-shrink: 0;
+	width: 100%;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+
+.custom-logo {
+	flex-shrink: 0;
+	height: 100%;
+}
+
+#site-navigation  {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	@media screen and (max-width: 425px) {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+
+.menu-toggle {
+	align-self: center;
+	flex-shrink: 0;
+	left: auto;
+	right: auto;
+	transform: none;
+	position:relative;
+	margin-right: 0;
+	margin-left: 0;
+}
